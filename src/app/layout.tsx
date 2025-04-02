@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Roboto } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
-import HeaderMenu from "@/components/headermenu";
+
 import BottomNav from "@/components/bottomnav";
 import Sidebar from "@/components/sidebar";
 import { Toaster } from "sonner";

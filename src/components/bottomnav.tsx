@@ -1,13 +1,7 @@
 "use client";
-import {
-  BotOffIcon,
-  BriefcaseBusiness,
-  FileInput,
-  Home,
-  User,
-} from "lucide-react";
-import { useParams, usePathname, useRouter } from "next/navigation";
-import React, { useState } from "react";
+import { BriefcaseBusiness, FileInput, Home, User } from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
+import React from "react";
 
 const navItems = [
   {
@@ -33,14 +27,14 @@ const navItems = [
 ];
 
 const BottomNav = () => {
-  const [activeTab, setActiveTab] = useState("home");
+  // const [activeTab, setActiveTab] = useState("home");
   const router = useRouter();
   const currentPath = usePathname();
   console.log(currentPath);
   return (
     <nav className="w-full bg-white shadow-2xl border rounded-t-2xl fixed bottom-0 h-16 max-w-2xl lg:hidden md:hidden">
       <div className=" w-full h-full mb-4 px-2 justify-between flex items-center">
-        {navItems.map((item, idx) => (
+        {navItems.map((item) => (
           <div
             key={item.id}
             className={`flex flex-col w-fit h-full items-center py-2 ${

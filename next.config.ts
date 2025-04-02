@@ -2,16 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  reactStrictMode: true,
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "gravatar.com/",
-        port: "",
-        pathname: "/avatar/**",
-        search: "",
-      },
-    ],
+    domains: ["gravatar.com"], // Add gravatar.com to the allowed domains
   },
 };
 
